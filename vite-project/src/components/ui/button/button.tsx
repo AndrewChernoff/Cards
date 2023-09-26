@@ -3,7 +3,7 @@ import { ComponentPropsWithoutRef, ElementType } from 'react'
 import s from './button.module.scss'
 
 export type ButtonProps<T extends ElementType> = {
-  variant?: 'primary' | 'secondary' | 'tertiary' | 'link'
+  variant?: 'primary' | 'secondary' | 'tertiary' | 'link' | 'purple'
   fullWidth?: boolean
   as?: T
   className?: string
