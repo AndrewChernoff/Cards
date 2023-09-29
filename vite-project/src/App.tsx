@@ -1,4 +1,5 @@
 import { Button } from './components/ui/button'
+import Card from './components/ui/card/card'
 import Header from './components/ui/header/header'
 import Input from './components/ui/input/input'
 
@@ -20,6 +21,8 @@ function App() {
         error={false}
         isDisabled={true}
       />
+
+      <Card>Card</Card>
     </div>
   )
 }
