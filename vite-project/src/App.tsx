@@ -1,5 +1,6 @@
 import { Button } from './components/ui/button'
 import Header from './components/ui/header/header'
+import Input from './components/ui/input/input'
 
 function App() {
   return (
@@ -11,6 +12,14 @@ function App() {
       <Button as={'a'} href={'http://localhost:5173/hello'}>
         Link
       </Button> */}
+      <Input
+        isSearch={true}
+        type={'text'}
+        label={'Input'}
+        placeholder={'Input'}
+        error={false}
+        isDisabled={true}
+      />
     </div>
   )
 }

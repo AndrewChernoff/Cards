@@ -1,23 +1,28 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import Header from './header'
+import Input from './input'
 
 const meta = {
   title: 'Components/Button',
-  component: Header,
+  component: Input,
   tags: ['autodocs'],
   /* argTypes: {
      isAuth: {
       control: { type: 'radio' },
     },
   }, */
-} satisfies Meta<typeof Header>
+} satisfies Meta<typeof Input>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const AuthHeader: Story = {
+export const InputUniversal: Story = {
   args: {
-    isAuth: true,
+    isSearch: true,
+    type: 'text',
+    label: 'Input',
+    placeholder: 'Input',
+    error: false,
+    isDisabled: true,
   },
 }

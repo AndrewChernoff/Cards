@@ -64,7 +64,6 @@ export const AsLink: Story = {
     disabled: false,
     fullWidth: true,
     as: 'a',
-    //@ts-ignore
     href: 'htttps://www.google.com',
   },
 }
