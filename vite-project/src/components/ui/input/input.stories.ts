@@ -16,7 +16,39 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const InputUniversal: Story = {
+export const SimpleInput: Story = {
+  args: {
+    isSearch: false,
+    type: 'text',
+    label: 'Input',
+    placeholder: 'Input',
+    error: false,
+    isDisabled: false,
+  },
+}
+export const SearchInput: Story = {
+  args: {
+    isSearch: true,
+    type: 'text',
+    label: 'Input',
+    placeholder: 'Input',
+    error: false,
+    isDisabled: false,
+  },
+}
+
+export const ErrorInput: Story = {
+  args: {
+    isSearch: true,
+    type: 'text',
+    label: 'Input',
+    placeholder: 'Input',
+    error: true,
+    isDisabled: false,
+  },
+}
+
+export const DisabledInput: Story = {
   args: {
     isSearch: true,
     type: 'text',
