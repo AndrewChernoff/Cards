@@ -1,5 +1,6 @@
 import { Button } from './components/ui/button'
 import Card from './components/ui/card/card'
+import CheckboxDemo from './components/ui/chekbox/checkbox'
 import Header from './components/ui/header/header'
 import Input from './components/ui/input/input'
 
@@ -23,6 +24,8 @@ function App() {
       />
 
       <Card>Card</Card>
+
+      <CheckboxDemo label={'Label'} id={'nothing'} />
     </div>
   )
 }
