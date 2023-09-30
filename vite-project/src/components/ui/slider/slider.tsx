@@ -36,7 +36,9 @@ function EditableSlider(props: Props) {
           <Slider.Range className={s.slider__range} />
         </Slider.Track>
         {sliderValue.map((_, i) => (
-          <Slider.Thumb key={i} className={s.slider__thumb} />
+          <Slider.Thumb key={i} className={s.slider__thumb}>
+            <div className={s.slider__thumb_circle}></div>
+          </Slider.Thumb>
         ))}
       </Slider.Root>
       <p>{value[1]}</p>
