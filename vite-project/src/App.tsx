@@ -3,6 +3,7 @@ import Card from './components/ui/card/card'
 import CheckboxDemo from './components/ui/chekbox/checkbox'
 import Header from './components/ui/header/header'
 import Input from './components/ui/input/input'
+import SelectDemo from './components/ui/select/select'
 import EditableSlider from './components/ui/slider/slider'
 
 function App() {
@@ -24,11 +25,13 @@ function App() {
         isDisabled={true}
       />
 
-      <Card>Card</Card>
+      {/* <Card>Card</Card> */}
 
-      <CheckboxDemo label={'Label'} id={'nothing'} />
+      <SelectDemo />
 
-      <EditableSlider value={[25, 75]} />
+      {/* <CheckboxDemo label={'Label'} id={'nothing'} />
+
+      <EditableSlider value={[25, 75]} /> */}
     </div>
   )
 }
