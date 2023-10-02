@@ -5,7 +5,7 @@ const Wrapper = styled('div', {
   position: 'relative',
   display: 'flex',
   alignItems: 'center',
-  width: '100%',
+  /*  width: '100%', */
 })
 
 const SelTrigger = styled('button', {
@@ -38,7 +38,9 @@ const Dropdown = styled('div', {
   position: 'relative',
   boxSizing: 'border-box',
   color: '#fff',
-  padding: '16px 8px',
+  padding: '0 8px',
+  width: '210px',
+
   fontFamily: 'sans-serif',
   fontSize: 16,
   background: '#2a2a2a',
@@ -53,7 +55,7 @@ const Viewport = styled(Radix.Viewport, {
   display: 'flex',
   flexDirection: 'column',
   rowGap: 8,
-  /* background: 'blue', */
+  /*  background: 'blue', */
 })
 
 const Item = styled(Radix.Item, {

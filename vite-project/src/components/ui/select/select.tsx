@@ -2,7 +2,6 @@ import { useState } from 'react'
 
 import * as Radix from '@radix-ui/react-select'
 
-import s from './select.module.scss'
 import { SelTrigger, Dropdown, Wrapper, Viewport, Item } from './select_addition/select-components'
 import Chevron from './select_addition/shevron'
 
@@ -10,17 +9,14 @@ const items = ['Item 1', 'Item 2', 'Item 3', 'Item 4']
 
 const error = null
 
-const App = () => {
+const Select = () => {
   const [toggled, setToggled] = useState('closed')
 
   return (
     <div
       style={{
-        /* height: '100vh',
-        background: 'linear-gradient(to right,#a6cad6,#d39c93)', */
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center',
         padding: 16,
       }}
     >
@@ -44,7 +40,7 @@ const App = () => {
               </SelTrigger>
             </Radix.Trigger>
             <Radix.Content asChild>
-              <Dropdown style={{ marginTop: '50px' }}>
+              <Dropdown style={{ marginTop: '40px' }}>
                 <Viewport>
                   {items.map((item, i) => {
                     return (
@@ -63,4 +59,4 @@ const App = () => {
   )
 }
 
-export default App
+export default Select
