@@ -17,7 +17,7 @@ const Select = () => {
       style={{
         display: 'flex',
         alignItems: 'center',
-        padding: 16,
+        padding: 10,
       }}
     >
       <form style={{ width: '100%', maxWidth: 420 }}>
