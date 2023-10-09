@@ -46,7 +46,6 @@ const Input = forwardRef<HTMLInputElement, Props>((props, ref) => {
         <input
           disabled={isDisabled}
           type={inputType}
-          //value={title}
           className={error ? errorInputClassname : inputClassname}
           placeholder={placeholder}
           ref={ref}

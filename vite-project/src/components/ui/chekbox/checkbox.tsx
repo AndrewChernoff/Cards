@@ -1,32 +1,24 @@
-import { useState } from 'react'
-
 import * as Checkbox from '@radix-ui/react-checkbox'
 import { CheckIcon } from '@radix-ui/react-icons'
 
 import s from './checkbox.module.scss'
 
-interface Props {
+export interface CheckboxProps {
   label: string
   id: string
   checked: boolean
-  onCheckedChange: (value: any) => void
+  onCheckedChange: (value: boolean) => void
 }
 
-const CheckboxDemo = ({ id, label, checked, onCheckedChange }: Props) => {
-  const [isChecked, setIsChecked] = useState(true)
-
-  const checkboxBackground = isChecked ? 'white' : 'black'
+const CheckboxDemo = ({ id, label, checked, onCheckedChange }: CheckboxProps) => {
+  const checkboxBackground = checked ? 'white' : 'black'
 
   return (
     <div className={s.checkbox}>
-      <div
-        /*  style={{ display: 'flex', alignItems: 'center', margin: '50px', width: '24px' }} */
-        className={s.wrapper}
-      >
+      <div className={s.wrapper}>
         <Checkbox.Root
           className={s.checkboxRoot}
-          checked={/* isChecked */ checked}
-          //onClick={() => setIsChecked(!isChecked)}
+          checked={checked}
           onCheckedChange={onCheckedChange}
           style={{ backgroundColor: checkboxBackground }}
           id={id}
